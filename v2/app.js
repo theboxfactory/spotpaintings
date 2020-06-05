@@ -14,10 +14,13 @@ function create_color() {
 function update() {
   const container = document.getElementById('container');
   let html = '';
+  const width = 10;
+  const height = 10;
 
+  let color = create_color();
   for (let x = 0; x < SPOT_COUNT; x++) {
-    let color = create_color();
-    let style = `background-color: rgb(${color.r}, ${color.g}, ${color.b})`;
+    let style = `background-color: rgb(${color.r}, ${color.g}, ${color.b});`;
+    // let style = `background-color: rgb(${color.r}, ${color.g}, ${color.b}); width:${width}; height:${height}`;
     let css_class = '';
 
     if (Math.random() > 0.5) {
