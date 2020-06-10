@@ -4,6 +4,13 @@
 
 */
 
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 90%;
+  margin: 12px;
+}
+
 .circle_in {
   height: 100px;
   width: 100px;
