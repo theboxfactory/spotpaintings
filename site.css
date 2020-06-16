@@ -131,8 +131,10 @@ ul {
 a {
   margin-top: 32px;
   text-decoration: none;
+  background-color: yellow;
 }
 
 a:hover {
-  color: red;
+  color: yellow;
+  background-color: black;
 }
