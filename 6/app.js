@@ -98,8 +98,7 @@ function update() {
   spots.forEach((spot) => {
     let opacity = 1;
     let style = `background-color: rgb(${spot.color.r}, ${spot.color.g}, ${spot.color.b}, ${opacity});`;
-    let css_class = "";
-    css_class = "circle";
+    let css_class = "square";
     html += `<span class="${css_class}" style="${style}"></span>`;
   });
 

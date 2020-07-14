@@ -1,6 +1,7 @@
 // @ts-nocheck
 
 const SPOT_COUNT = 50;
+const INTERVAL = 20 * 1000;
 let spots = [];
 
 function create_color() {
@@ -19,15 +20,15 @@ function update() {
 
   let color = create_color();
   for (let x = 0; x < SPOT_COUNT; x++) {
-    let style = `background-color: rgb(${color.r}, ${color.g}, ${color.b});`;
-    // let style = `background-color: rgb(${color.r}, ${color.g}, ${color.b}); width:${width}; height:${height}`;
+    let opacity = Math.random();
+    let style = `background-color: rgb(${color.r}, ${color.g}, ${color.b}, ${opacity});`;
     let css_class = '';
 
-    if (Math.random() > 0.5) {
-      css_class = 'circle_out';
-    } else {
-      css_class = 'circle_in';
-    }
+    // if (Math.random() > 0.5) {
+    //   css_class = 'circle_out';
+    // } else {
+    css_class = 'square_in_out';
+    // }
 
     html += `<span class="${css_class}" style="${style}"></span>`
   }
@@ -42,6 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // console.log('Height: ' + window.innerHeight);
   update();
 
-  setInterval(update, 10000);
+  setInterval(update, INTERVAL);
 
 });

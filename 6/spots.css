@@ -4,6 +4,14 @@
 
 */
 
+
+.square {
+  height: 100px;
+  width: 100px;
+  border-radius: 0%;
+  margin: 12px;
+}
+
 .circle {
   height: 100px;
   width: 100px;

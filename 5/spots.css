@@ -4,13 +4,6 @@
 
 */
 
-.circle {
-  height: 100px;
-  width: 100px;
-  border-radius: 90%;
-  margin: 12px;
-}
-
 .circle_in {
   height: 100px;
   width: 100px;
@@ -28,10 +21,10 @@
   animation: fadeout 10s;
 }
 
-.circle_in_out {
+.square_in_out {
   height: 100px;
   width: 100px;
-  border-radius: 90%;
+  border-radius: 0%;
   margin: 12px;
   animation-name: fadein, fadeout;
   animation-duration: 10s, 10s;
